@@ -216,12 +216,11 @@ body {
     width: 2.5rem;
     border-radius: .2rem;
 
-    background-image: radial-gradient(#fff8dc, #fff8dc);
-
     z-index: 1000;
 }
 
 .registration__checkbox:checked ~ .registration__background {
+    background-image: radial-gradient(#fff8dc, #fff8dc);
     transform: scale(12);
 }
 
@@ -235,6 +234,7 @@ body {
 }
 
 .login__checkbox:checked ~ .registration__background {
+    background-image: radial-gradient(#fff8dc, #fff8dc);
     transform: scale(12);
     z-index: 2500;
 }
@@ -372,14 +372,16 @@ body {
 }
 
 /*SIGNING IN AND LOGGING OUT*/
-.entry__icon-box {
-
+.admin-way__items {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
 }
 
-.entry__icon {
-    height: 2.25rem;
+.admin-way__icon {
+    height: 2.1rem;
     width: 2.25rem;
-    margin-right: 3rem;
+    margin: -.1rem 3rem 0 .1rem;
 }
 
 
