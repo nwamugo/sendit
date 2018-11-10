@@ -5,3 +5,5 @@ before_install: cd sendit-api
 cache:
   directories:
     - "$HOME/sendit-api/.npm"
+after_success:
+  - npm run coveralls

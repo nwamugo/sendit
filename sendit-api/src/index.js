@@ -19,6 +19,6 @@ app.use(express.json());
 app.use('/api/v1', router);
 app.use('/api/v1/users', usersRoutes);
 
-app.server.listen(config.port);
+if (!process.env.NODE_ENV === 'testing') app.server.listen(config.port);
 
 export default app;
