@@ -1,13 +1,13 @@
 import { Router } from 'express';
 import parcels from '../data/parcels-data';
 
-
 const router = Router();
 
 // HELPER functinos
 function findParcel(parcel) {
   return parcels.find(p => p.parcelId === parseInt(parcel.parcelId, 10));
 }
+
 
 // api routes v1 (/api/v1)
 router.get('/parcels', (req, res) => {

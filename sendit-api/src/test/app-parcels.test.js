@@ -1,40 +1,58 @@
-import expect from 'expect';
+import { expect } from 'chai';
 import supertest from 'supertest';
-import app from '../index';
+import app from '..';
 
 import parcels from '../data/parcels-data';
 
-
-describe('GET /parcels', () => {
-  it('should fetch all parcels', (done) => {
-    supertest(app)
-      .get('/parcels')
-      .expect(200)
-      .end(done);
-  });
-
-  it('should fetch a specific parcel delivery order', (done) => {
-    supertest(app)
-      .get(`/parcels/${parcels[0].parcelId}`)
-      .expect(200)
-      .expect((res) => {
-        expect(res.body.parcel.destination).toBe(parcels[0].destination);
+const api = supertest(app);
+describe('POST /parcels', () => {
+  it('should return a 200 response', (done) => {
+    api.post('/api/v1/parcels')
+      .send({
+        userId: 555,
+        pickupLocation: 'Adamawa',
+        destination: 'Sokoto',
+        price: 4500,
+        presentLocation: 'Adamawa',
       })
+      .expect(200)
       .end(done);
   });
 });
 
-
-describe('POST /parcels', () => {
-  it('should create a new delivery order', (done) => {
-    const parcel = { destination: 'Owerri' };
-    supertest(app)
-      .post('/parcels')
-      .send(parcel)
+describe('GET /parcels', () => {
+  it('should fetch all parcels', (done) => {
+    api.get('/api/v1/parcels')
+      .set('Accept', 'application/json')
       .expect(200)
-      .expect((res) => {
-        expect(res.body.destination).toBe('Owerri');
-      })
       .end(done);
+  });
+});
+
+describe('GET /parcels/:parcelId', () => {
+  it('should return a specific parcel', (done) => {
+    api.get(`/api/v1/parcels/${parcels[0].parcelId}`)
+      .set('Accept', 'application/json')
+      .expect(200)
+      .end((err, res) => {
+        expect(res.body.parcelId).to.equal(parcels[0].parcelId);
+        done();
+      });
+  });
+});
+
+describe('PUT /parcels/:parcelId/cancel', () => {
+  it('should cancel a parcel delivery order', (done) => {
+    api.put(`/api/v1/parcels/${parcels[0].parcelId}/cancel`)
+      .send({
+        cancel: true,
+        status: 'Cancelled',
+      })
+      .expect(200)
+      .end((err, res) => {
+        expect(res.body.cancel).to.equal(true);
+        expect(res.body.status).to.equal('Cancelled');
+        done();
+      });
   });
 });
