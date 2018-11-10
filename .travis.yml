@@ -1,4 +1,4 @@
 language: node_js
 node_js:
-  - "10"
-before_script: cd sendit-api
+  - "stable"
+before_install: cd sendit-api
