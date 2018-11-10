@@ -18,6 +18,21 @@ app.use(express.json());
 app.use('/api/v1', router);
 app.use('/api/v1/users', usersRoutes);
 
-if (!process.env.NODE_ENV === 'testing') app.server.listen(config.port);
+// Test Route
+app.get('/', (req, res) => {
+  res.json(
+    {
+      greetings: 'Welcome to our API!',
+      get: '/api/v1/parcels',
+      get2: '/api/v1/parcels/<parcelId>',
+      get3: '/api/v1/users/<userId>/parcels',
+      put: '/api/v1/parcels/<parcelId>/cancel',
+      post: 'api/v1/parcels',
+    },
+  );
+});
+
+
+app.server.listen(config.port);
 
 export default app;

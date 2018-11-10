@@ -24,7 +24,18 @@ app.server = _http["default"].createServer(app); // middleware
 app.use(_express["default"].json()); // api routes v1
 
 app.use('/api/v1', _parcels["default"]);
-app.use('/api/v1/users', _users["default"]);
+app.use('/api/v1/users', _users["default"]); // Test Route
+
+app.get('/', function (req, res) {
+  res.json({
+    greetings: 'Welcome to our API!',
+    get: '/api/v1/parcels',
+    get2: '/api/v1/parcels/<parcelId>',
+    get3: '/api/v1/users/<userId>/parcels',
+    put: '/api/v1/parcels/<parcelId>/cancel',
+    post: 'api/v1/parcels'
+  });
+});
 app.server.listen(_config["default"].port);
 var _default = app;
 exports["default"] = _default;
