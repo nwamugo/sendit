@@ -5,5 +5,5 @@ install:
   - npm ci
 cache:
   directories:
-    - "$HOME/.npm"
+    - "$HOME/sendit-api/.npm"
 before_script: cd sendit-api
