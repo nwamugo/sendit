@@ -33,6 +33,6 @@ app.get('/', (req, res) => {
 });
 
 
-app.server.listen(config.port);
+if (!process.env.NODE_ENV === 'testing') app.server.listen(config.port);
 
 export default app;
