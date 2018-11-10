@@ -9,7 +9,6 @@ import usersRoutes from './routes/users';
 const app = express();
 app.server = http.createServer(app);
 
-
 // middleware
 // parse application/json
 app.use(express.json());
