@@ -3,7 +3,4 @@ node_js:
   - "10"
 install:
   - npm ci
-cache:
-  directories:
-    - "/home/travis/build/nwamugo/sendit/sendit-api/.npm"
 before_script: cd sendit-api
