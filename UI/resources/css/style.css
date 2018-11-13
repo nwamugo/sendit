@@ -482,9 +482,13 @@ body {
     max-width: 18rem;
 }
 
+.delivery-press {
+    text-align: center;
+}
+
 .new__order {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 
