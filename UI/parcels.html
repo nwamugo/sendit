@@ -16,97 +16,102 @@
             <div class="header__logo-box">
                 <a href="parcels.html"><img src="resources/img/logog2.png" alt="Logo" class="header__logo"></a>
             </div>
+            <div class="search-container">
+                                <form action="#" class="search">
+                                    <label for="search">Search</label>
+                                    <input type="text" class="search__input" placeholder="By Destination" name="search">
+                                    <button class="search__button">
+                                        <svg class="search__icon">
+                                            <use xlink:href="resources/img/sprite.svg#icon-magnifying-glass"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
             <div class="header__user">
                 <h3>Ugoji Duziem</h3>
             </div>
         </header>
 
-        <div class="parcels-content">
-            <main class="parcels-overview">
-                <div class="gallery">
-                    <figure class="gallery__item">
-                        <img src="resources/img/queue_1280.jpg" alt="Queued Packages" class="gallery__photo">
-                    </figure>
-                    <figure class="gallery__item">
-                        <img src="resources/img/intransit.jpg" alt="Moving Packages" class="gallery__photo">
-                    </figure><figure class="gallery__item">
-                        <img src="resources/img/delivered_1280.jpg" alt="A delivered Parcel" class="gallery__photo">
-                    </figure>
+        <main class="parcels-overview">
+            <div class="gallery">
+                <figure class="gallery__item">
+                    <img src="resources/img/queue_1280.jpg" alt="Queued Packages" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="resources/img/intransit.jpg" alt="Moving Packages" class="gallery__photo">
+                </figure><figure class="gallery__item">
+                    <img src="resources/img/delivered_1280.jpg" alt="A delivered Parcel" class="gallery__photo">
+                </figure>
+            </div>
+
+            <div class="parcels-section">
+                <div class="parcels-content">
+                    <div class="my-parcels">
+                        <div class="parcels-container">
+                            <div class="my-parcels__heading">
+                                <svg class="my-parcels__icon-gift">
+                                    <use xlink:href="resources/img/sprite.svg#icon-gift"></use>
+                                </svg>
+                                <h1 class="my-parcels__title">My Parcels</h1>
+                            </div>
+                            <div class="my-parcels__status">
+                                <svg class="my-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-queue"></use>
+                                </svg>
+                                <h3 class="my-parcels-status__queue">Queue: <span class="queue-count">3</span></h3>
+                                <svg class="my-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-truck"></use>
+                                </svg>
+                                <h3 class="my-parcels-status__transit">Transit: <span class="transit-count">1</span></h3>
+                                <svg class="my-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-check"></use>
+                                </svg>
+                                <h3 class="my-parcels-status__delivered">Delivered: <span class="delivered-count">1</span></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="delivery-orders">
+                        <div class="order">
+                            <h3>Parcel ID - &nbsp; XA896745</h3>
+                            <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
+                            <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
+                            <p class="fee">Fee: N12,000</p>
+                            <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
+                        </div>
+                        <div class="order">
+                            <h3>Parcel ID - &nbsp; XA896745</h3>
+                            <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
+                            <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
+                            <p class="fee">Fee: N12,000</p>
+                            <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
+                        </div>
+                        <div class="order">
+                            <h3>Parcel ID - &nbsp; XA896745</h3>
+                            <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
+                            <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
+                            <p class="fee">Fee: N12,000</p>
+                            <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
+                        </div>
+                        <div class="order">
+                            <h3>Parcel ID - &nbsp; XA896745</h3>
+                            <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
+                            <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
+                            <p class="fee">Fee: N12,000</p>
+                            <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
+                        </div>
+                        <div class="order">
+                            <h3>Parcel ID - &nbsp; XA896745</h3>
+                            <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
+                            <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
+                            <p class="fee">Fee: N12,000</p>
+                            <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="my-parcels">
-                    <div class="my-parcels__heading">
-                        <svg class="my-parcels__icon-gift">
-                            <use xlink:href="resources/img/sprite.svg#icon-gift"></use>
-                        </svg>
-                        <h1 class="my-parcels__title">My Parcels</h1>
-                    </div>
-                    <div class="my-parcels__status">
-                        <svg class="my-parcels__icon">
-                            <use xlink:href="resources/img/sprite.svg#icon-queue"></use>
-                        </svg>
-                        <h3 class="my-parcels-status__queue">Queue: <span class="queue-count">3</span></h3>
-                        <svg class="my-parcels__icon">
-                            <use xlink:href="resources/img/sprite.svg#icon-truck"></use>
-                        </svg>
-                        <h3 class="my-parcels-status__transit">Transit: <span class="transit-count">1</span></h3>
-                        <svg class="my-parcels__icon">
-                            <use xlink:href="resources/img/sprite.svg#icon-check"></use>
-                        </svg>
-                        <h3 class="my-parcels-status__delivered">Delivered: <span class="delivered-count">1</span></h3>
-                    </div>
-                </div>
-                <div class="search-container">
-                    <form action="#" class="search">
-                        <label for="search">Search</label>
-                        <input type="text" class="search__input" placeholder="By Destination" name="search">
-                        <button class="search__button">
-                            <svg class="search__icon">
-                                <use xlink:href="resources/img/sprite.svg#icon-magnifying-glass"></use>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
 
-                <div class="delivery-orders">
-                    <div class="order">
-                        <h3>Parcel ID - &nbsp; XA896745</h3>
-                        <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
-                        <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
-                        <p class="fee">Fee: N12,000</p>
-                        <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
-                    </div>
-                    <div class="order">
-                        <h3>Parcel ID - &nbsp; XA896745</h3>
-                        <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
-                        <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
-                        <p class="fee">Fee: N12,000</p>
-                        <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
-                    </div>
-                    <div class="order">
-                        <h3>Parcel ID - &nbsp; XA896745</h3>
-                        <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
-                        <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
-                        <p class="fee">Fee: N12,000</p>
-                        <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
-                    </div>
-                    <div class="order">
-                        <h3>Parcel ID - &nbsp; XA896745</h3>
-                        <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
-                        <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
-                        <p class="fee">Fee: N12,000</p>
-                        <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
-                    </div>
-                    <div class="order">
-                        <h3>Parcel ID - &nbsp; XA896745</h3>
-                        <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
-                        <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
-                        <p class="fee">Fee: N12,000</p>
-                        <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
-                    </div>
-                </div>
-            </main>
-            <nav class="parcels-sidebar">
+                <nav class="parcels-sidebar">
                 <div class="delivery__total">
                     <div class="numbers">
                         5
@@ -119,7 +124,7 @@
                     <svg class="my-parcels__icon">
                         <use xlink:href="resources/img/sprite.svg#icon-plus"></use>
                     </svg>
-                    <a href="new-order.html"><h3 class="my-parcels-status__queue">New delivery order</h3></a>
+                    <a href="new-order.html"><h3 class="my-parcels-status__queue btn btn-golden2">New delivery order</h3></a>
                 </div>
                 <div class="filter-categories">
                     <h3>Filters</h3>
@@ -150,7 +155,11 @@
                         </li>
                     </ul>
                 </div>
-            </nav>
+                </nav>
+            </div>
+
+        </main>
+
         </div>
     </body>
 </html>

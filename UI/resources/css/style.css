@@ -209,7 +209,6 @@ body {
     position: absolute;
     top: 42%;
     left: 52%;
-    /*transform: translate(-50%, -50%);*/
     text-align: center;
 
     height: 2.8rem;
@@ -290,6 +289,11 @@ body {
     z-index: 2000;
 }
 
+.btn-golden2 {
+    background-color: #b28451;
+    color: #292929;
+}
+
 .btn-darkblue {
     position: absolute;
     top: 40%;
@@ -322,20 +326,38 @@ body {
     transform: translateY(0);
 }
 
+.parcels-container {
+    display: flex;
+    border-radius: 2rem;
+}
+
+
+.parcels-section {
+    display: flex;
+    padding: 4.5rem;
+    background-color: #faf9f9;
+    border-bottom: 1px solid #f4f2f2;
+}
 
 .parcels-content {
-    display: flex;
+    background-color: #eee;
+    box-shadow: 0 2rem 5rem rgba(0,0,0, .06);
+    flex: 0 0 65%;
+    margin: 0.3rem 4.5rem 4.5rem 1.5rem;
+    border-radius: 1rem;
 }
 
 .parcels-sidebar {
-    flex: 0 0 20%;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: #eee;
+    border-radius: 1rem;
 }
 
 .parcels-overview {
-    flex: 1;
+
 }
 
 .gallery {
@@ -386,7 +408,7 @@ body {
 
 
 .my-parcels {
-    display: flex;
+    /*display: flex;*/
     color: #292929;
     background-color: #b28451;
     justify-content: space-between;
@@ -451,11 +473,13 @@ body {
 .delivery-orders {
     display: flex;
     flex-wrap: wrap;
+
+    padding: 3rem;
 }
 
 .order {
-    margin: 4.5rem;
-    width: 22rem;
+    margin: 4.5rem 0 4.5rem 2.5rem;
+    max-width: 18rem;
 }
 
 .new__order {
