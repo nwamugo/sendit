@@ -489,6 +489,7 @@ body {
 .new__order {
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
 }
 
 
