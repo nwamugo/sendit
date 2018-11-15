@@ -8,6 +8,14 @@ function findParcel(parcel) {
   return parcels.find(p => p.parcelId === parseInt(parcel.parcelId, 10));
 }
 
+function createId() {
+  const lastIndex = parcels.length - 1;
+  const gettingId = parcels[lastIndex].parcelId;
+  const newId = gettingId + 1;
+
+  return newId;
+}
+
 
 // api routes v1 (/api/v1)
 router.get('/parcels', (req, res) => {
@@ -25,8 +33,9 @@ router.post('/parcels', (req, res) => {
     res.status(400).send('Destination is required.');
     return;
   }
+
   const parcel = {
-    parcelId: parcels.length + 1,
+    parcelId: createId(),
     userId: req.body.userId,
     pickupLocation: req.body.pickupLocation,
     destination: req.body.destination,
@@ -34,6 +43,8 @@ router.post('/parcels', (req, res) => {
     status: 'Queue',
     presentLocation: req.body.pickupLocation,
   };
+
+
   parcels.push(parcel);
   res.status(200).send(parcel);
 });
