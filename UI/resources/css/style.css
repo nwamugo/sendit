@@ -32,10 +32,6 @@ body {
     overflow: hidden;
 }
 
-.admin-landing {
-    overflow: hidden;
-}
-
 .access-box {
     position: absolute;
     top: 40%;
@@ -104,20 +100,16 @@ body {
     margin-right: 3rem;
 }
 
-.admin__form {
-    margin-left: 8rem;
-}
-
 
 .form__input {
     font-size: 1.2rem;
     font-family: inherit;
-    color: #555;
+    color: #222;
     padding: 1.5rem 1.5rem .5rem;
     border-radius: 2px;
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    border-bottom: 1px solid #555;
+    border-bottom: 2px solid #555;
     width: 90%;
     display: block;
     transition: all .3s;
@@ -126,7 +118,7 @@ body {
 .form__input:focus {
     outline: none;
     box-shadow: 0 1rem 2rem rgba(0,0,0, .1);
-    border-bottom: 1px solid #c69963;
+    border-bottom: 1px solid #1db565;
 }
 
 .form__input:focus:invalid {
@@ -140,15 +132,12 @@ body {
 .form__label {
     font-size: .9rem;
     font-weight: 700;
-    margin-left: -17rem;
+    margin-left: -8rem;
     margin-top: .7rem;
     display: block;
     transition: all .3s;
 }
 
-.email-label {
-    margin-left: -15.5rem;;
-}
 
 .form__input:placeholder-shown + .form__label {
     opacity: 0;
@@ -157,96 +146,97 @@ body {
 }
 
 .form__checkbox-group {
-    margin: 2rem 2rem 3rem .1rem;
+    margin: 1.7rem 2rem 1.5rem 0;
+}
+
+
+.form__checkbox-label {
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.have-account {
+    color: #333;
+    margin-top: 1rem;
+}
+
+.no-account {
+    color: #333;
+    margin-top: 1rem;
 }
 
 .form__container {
-    height: 50%;
-    width: 0%;
-    position: fixed;
-    top: 11rem;
-    right: 43.5rem;
-    z-index: 1500;
-
-    opacity: 0;
+    margin: 10% auto 0;
+    padding: 1rem;
+    height: 70%;
+    width: 30%;
+    opacity: 1;
+    background-image: radial-gradient(#fff, #fff);
+    border-radius: .4rem;
 }
 
 .form__container2 {
+    margin: 6% auto;
+    padding: 1rem;
     height: 50%;
-    width: 0%;
-    position: fixed;
-    top: 16rem;
-    right: 43.5rem;
-    z-index: 3000;
+    width: 80%;
+    opacity: 1;
+}
 
-    opacity: 0;
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 4.8rem;
+    font-weight: bold;
+    margin-right: 2rem;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.u-margin-top-small {
+    margin-top: 2rem;
+}
+
+.u-margin-right-small {
+    margin-right: 2rem;
 }
 
 .access__form {
-    /*position: absolute;*/
-    top: 80%;
-    left: 50%;
+    padding: 15% 0 0 8%;
     text-align: center;
 }
 
-.registration {
-    /*position: relative;*/
-}
 
-.registration__checkbox {
-    display: none;
-}
 
-.login__checkbox {
-    display: none;
-}
 
-.registration__button {
-
-}
-
-.registration__background {
-    position: absolute;
-    top: 42%;
-    left: 52%;
+.registration__background,
+.login__background {
+    position: fixed;
+    top: 0;
+    left: 0;
     text-align: center;
 
-    height: 2.8rem;
-    width: 2.5rem;
-    border-radius: .2rem;
-
+    display: none;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0, 0.1)
     z-index: 1000;
 }
 
-.registration__checkbox:checked ~ .registration__background {
-    background-image: radial-gradient(#fff8dc, #fff8dc);
-    transform: scale(12);
+.landing__btn-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
-
-.registration__checkbox:checked + .btn-golden {
-    transform: translateX(-15rem);
-}
-
-.registration__checkbox:checked ~ .form__container {
-    opacity: 1;
-    width: 20%;
-}
-
-.login__checkbox:checked ~ .registration__background {
-    background-image: radial-gradient(#fff8dc, #fff8dc);
-    transform: scale(12);
-    z-index: 2500;
-}
-
-.login__checkbox:checked + .btn-darkblue {
-    transform: translateX(15rem);
-}
-
-.login__checkbox:checked ~ .form__container2 {
-    opacity: 1;
-    width: 20%;
-}
-
 
 .btn {
     text-transform: uppercase;
@@ -280,25 +270,11 @@ body {
 }
 
 .btn-golden {
-    position: absolute;
-    top: 40%;
-    left: 45%;
-    text-align: center;
-    background-color: #b28451;
-    color: #292929;
-    z-index: 2000;
-}
-
-.btn-golden2 {
     background-color: #b28451;
     color: #292929;
 }
 
 .btn-darkblue {
-    position: absolute;
-    top: 40%;
-    left: 55%;
-    text-align: center;
     background-color: #101d2c;
     color: #ccc;
 }
@@ -325,6 +301,92 @@ body {
     box-shadow: 0 .5rem 1rem rgba(0,0,0, .15);
     transform: translateY(0);
 }
+
+.user-dd {
+    position: relative;
+    align-self: stretch;
+    padding: 0 !important;
+}
+
+.user-dd-field {
+    display: flex;
+    cursor: pointer;
+    padding: 0 4rem;
+    align-items: center;
+    height: 100%;
+    transition: all .3s;
+}
+
+.user-dd-field:hover {
+    background-color: #b28451;
+}
+
+.user-dd-content:hover,
+.user-dd-field:hover + .user-dd-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.delivery-create__icon {
+    padding-top: 0.3rem;
+}
+
+.dd-icon {
+    fill: #b28451;
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.user-dd-content {
+    position: absolute;
+    right: 0;
+    top: 5.6rem;
+    z-index: 10;
+    padding: 2rem 0;
+    width: 17.1rem;
+    background-color: #fff;
+    box-shadow: 0 0.8rem 5rem 2rem rgba(101, 90, 86, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s .2s;
+}
+
+.user-dd {
+    padding: 3rem 0;
+}
+
+.user-dd-menu {
+    list-style: none;
+}
+
+.user-dd-link:link,
+.user-dd-link:visited {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    transition: all .3s;
+    border-right: 1px solid #fff;
+    text-decoration: none;
+}
+
+.user-dd-link:hover {
+    background-color: #f9f5f3;
+    transform: translateY(-2px);
+}
+
+.user-dd-link:active {
+    background-color: #f9f5f3;
+}
+
+.user-dd-name {
+    font-size: 1.3rem;
+    color: #54483a;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: .3rem;
+}
+
+
 
 .parcels-container {
     display: flex;
@@ -379,10 +441,6 @@ body {
     border-radius: 10px;
 }
 
-.search__button {
-
-}
-
 .search__icon {
     height: 2rem;
     width: 2rem;
@@ -408,7 +466,6 @@ body {
 
 
 .my-parcels {
-    /*display: flex;*/
     color: #292929;
     background-color: #b28451;
     justify-content: space-between;
@@ -488,8 +545,7 @@ body {
 
 .new__order {
     display: flex;
-    justify-content: space-between;
-    flex-direction: row;
+    justify-content: center;
 }
 
 
@@ -511,6 +567,7 @@ body {
 
 .grammar {
     font-size: 2.25rem;
+    text-align: center;
 }
 
 .filter-categories {
@@ -568,4 +625,15 @@ body {
 
 .odd {
     background-color: #c69963;
+}
+
+.footer {
+    background-color: #333;
+}
+
+.legal {
+    font-size: 1.2rem;
+    color: #ccc;
+    text-align: center;
+    padding: 2.5rem;
 }

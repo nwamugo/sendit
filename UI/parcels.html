@@ -27,8 +27,38 @@
                                     </button>
                                 </form>
                             </div>
-            <div class="header__user">
-                <h3>Ugoji Duziem</h3>
+            <div class="user-dd">
+                <div class="user-dd-field">
+                    <h3>Ugoji Duziem</h3>
+                    <svg class="dd-icon">
+                        <use xlink:href="resources/img/sprite.svg#icon-menu"></use>
+                    </svg>
+                </div>
+                <div class="user-dd-content">
+                    <ul class="user-dd-menu">
+                        <li>
+                            <a href="#" class="user-dd-link">
+                                <h4 class="user-dd-name">
+                                    <svg class="dd-icon">
+                                        <use xlink:href="resources/img/sprite.svg#icon-user"></use>
+                                    </svg>
+                                    &nbsp; My Profile
+                                </h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html" class="user-dd-link">
+                                <h4 class="user-dd-name">
+
+                                    <svg class="dd-icon">
+                                        <use xlink:href="resources/img/sprite.svg#icon-log-out"></use>
+                                    </svg>
+                                    &nbsp; Log out
+                                </h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
 
@@ -121,11 +151,14 @@
                     </div>
                 </div>
                 <div class="delivery-press">
-                    <a href="new-order.html" class="btn btn-golden2 new__order">
-                    <svg class="my-parcels__icon">
-                        <use xlink:href="resources/img/sprite.svg#icon-plus"></use>
-                    </svg>
-                    <h3 class="my-parcels-status__queue">New delivery order</h3></a>
+                    <a href="new-order.html" class="btn btn-golden new__order">
+                        <h3 class="my-parcels-status__queue">
+                            <svg class="my-parcels__icon delivery-create__icon">
+                                <use xlink:href="resources/img/sprite.svg#icon-plus"></use>
+                            </svg>
+                            &nbsp; New delivery order
+                        </h3>
+                    </a>
                 </div>
                 <div class="filter-categories">
                     <h3>Filters</h3>
@@ -158,9 +191,12 @@
                 </div>
                 </nav>
             </div>
-
         </main>
 
-        </div>
+        <footer class="footer">
+            <div class="legal">
+                &copy; 2018 by Duziem & Andela Nigeria. All rights reserved
+            </div>
+        </footer>
     </body>
 </html>
