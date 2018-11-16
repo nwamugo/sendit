@@ -378,12 +378,24 @@ body {
     background-color: #f9f5f3;
 }
 
-.user-dd-name {
+.user-dd-name,
+.user-dd-wrapname {
     font-size: 1.3rem;
-    color: #54483a;
     text-transform: uppercase;
     font-weight: 400;
     margin-bottom: .3rem;
+}
+
+.user-dd-name {
+    color: #54483a;
+}
+
+.user-dd-wrapname {
+    color: #8d7d69;
+}
+
+.user-dd-wrapname:hover {
+    color: #0c0b08;
 }
 
 
@@ -401,12 +413,40 @@ body {
     border-bottom: 1px solid #f4f2f2;
 }
 
+.parcel-world {
+    display: flex;
+}
+
+.parcels-content,
+.parcel-properties {
+    flex: 0 0 65%;
+    border-radius: 1rem;
+}
+
 .parcels-content {
     background-color: #eee;
-    box-shadow: 0 2rem 5rem rgba(0,0,0, .06);
-    flex: 0 0 65%;
     margin: 0.3rem 4.5rem 4.5rem 1.5rem;
+    box-shadow: 0 2rem 5rem rgba(0,0,0, .06);
+}
+
+.parcel-properties {
+    margin: 1.5rem 4.5rem 4.5rem 1.5rem;
+    padding: 2rem;
+    background-color: #fff;
+    box-shadow: 0 2rem 5rem rgba(16,29,44, .06);
+}
+
+.parcel-action {
+    flex: 1;
     border-radius: 1rem;
+    margin: 1.5rem 2.5rem 4.5rem 0rem;
+    padding: 2rem;
+    background-color: #fff;
+}
+
+.parcel-descript {
+    display: flex;
+    justify-content: space-around;
 }
 
 .parcels-sidebar {
@@ -418,9 +458,6 @@ body {
     border-radius: 1rem;
 }
 
-.parcels-overview {
-
-}
 
 .gallery {
     display: flex;
@@ -440,6 +477,7 @@ body {
     padding: .7rem 2rem;
     border-radius: 10px;
 }
+
 
 .search__icon {
     height: 2rem;
@@ -636,4 +674,57 @@ body {
     color: #ccc;
     text-align: center;
     padding: 2.5rem;
+}
+
+.parcel-focus {
+    margin: 0 auto;
+    max-width: 114rem;
+    /*background-color: orangered;*/
+}
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .15;
+    overflow: hidden;
+}
+
+.bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.display-status {
+    padding: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+}
+
+.display-status-btn {
+    padding: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+
+.parcel-status {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.change {
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: .2rem;
+    transition: all .2s;
+    cursor: pointer;
 }
