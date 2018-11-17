@@ -212,9 +212,6 @@ body {
     text-align: center;
 }
 
-
-
-
 .registration__background,
 .login__background {
     position: fixed;
@@ -312,6 +309,7 @@ body {
     display: flex;
     cursor: pointer;
     padding: 0 4rem;
+    padding-left: 1.59rem;
     align-items: center;
     height: 100%;
     transition: all .3s;
@@ -503,6 +501,53 @@ body {
 }
 
 
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search__label {
+    margin-right: .4rem;
+    color: #b28451;
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+.search__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    width: 90%;
+    transition: all .2s;
+    margin-right: -2.4rem;
+}
+
+.search__input:focus {
+    outline: none;
+    width: 100%;
+}
+
+.search__button {
+    border: none;
+    border-left: 1px solid #aaa;
+    background-color: #fff;
+}
+
+.search__button:focus {
+    outline: none;
+}
+
+.search__button:active {
+    transform: translateY(.2rem);
+}
+
+.search__icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+
 .my-parcels {
     color: #292929;
     background-color: #b28451;
@@ -676,11 +721,6 @@ body {
     padding: 2.5rem;
 }
 
-.parcel-focus {
-    margin: 0 auto;
-    max-width: 114rem;
-    /*background-color: orangered;*/
-}
 .bg-video {
     position: absolute;
     top: 0;
@@ -728,3 +768,59 @@ body {
     transition: all .2s;
     cursor: pointer;
 }
+
+.profile-page {
+    background-color: #eee;
+}
+
+.profile-pic {
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    position: relative;
+}
+
+.profile-img {
+    height: 100%;
+    transform: translateX(-4rem);
+    backface-visibility: hidden;
+    transition: all .5s;
+}
+
+.user-pf {
+    background-color: orangered;
+    margin: .4rem auto;
+    width: 60%;
+    padding: 2rem;
+    padding-top: 4rem;
+}
+
+.user-profile__outer {
+    margin: 0 auto;
+    max-width: 480rem;
+}
+
+.pic-house {
+    position: relative;
+    width: 100%;
+}
+
+.small-gallery__photo {
+    width: 100%;
+    height: 12rem;
+    overflow: hidden;
+    position: absolute;
+    opacity: 0;
+    transition: all .5s;
+    object-fit: cover;
+    backface-visibility: hidden;
+}
+
+.order:hover .small-gallery__photo {
+    opacity: .5;
+}
+
