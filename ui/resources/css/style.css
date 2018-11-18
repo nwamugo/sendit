@@ -100,7 +100,6 @@ body {
     margin-right: 3rem;
 }
 
-
 .form__input {
     font-size: 1.2rem;
     font-family: inherit;
@@ -138,7 +137,6 @@ body {
     transition: all .3s;
 }
 
-
 .form__input:placeholder-shown + .form__label {
     opacity: 0;
     visibility: hidden;
@@ -148,7 +146,6 @@ body {
 .form__checkbox-group {
     margin: 1.7rem 2rem 1.5rem 0;
 }
-
 
 .form__checkbox-label {
     color: #333;
@@ -198,7 +195,6 @@ body {
     cursor: pointer;
 }
 
-
 .u-margin-top-small {
     margin-top: 2rem;
 }
@@ -244,7 +240,6 @@ body {
     transition: all .2s;
     cursor: pointer;
 }
-
 
 .btn:link,
 .btn:visited {
@@ -396,13 +391,9 @@ body {
     color: #0c0b08;
 }
 
-
-
 .parcels-container {
     display: flex;
-    border-radius: 2rem;
 }
-
 
 .parcels-section {
     display: flex;
@@ -456,7 +447,6 @@ body {
     border-radius: 1rem;
 }
 
-
 .gallery {
     display: flex;
 }
@@ -476,13 +466,13 @@ body {
     border-radius: 10px;
 }
 
-
 .search__icon {
     height: 2rem;
     width: 2rem;
 }
 
-.search-container {
+.search-container,
+.selected-filter {
     display: flex;
     justify-content: center;
 }
@@ -547,7 +537,6 @@ body {
     width: 2rem;
 }
 
-
 .my-parcels {
     color: #292929;
     background-color: #b28451;
@@ -564,10 +553,6 @@ body {
 .my-parcels__icon-gift {
     height: 4rem;
     margin-right: -7rem;
-
-}
-
-.my-parcels__title {
 
 }
 
@@ -654,12 +639,23 @@ body {
 }
 
 .filter-categories {
+    display: flex;
     margin-bottom: 18rem;
-    text-align: center;
+    justify-content: center;
 }
 
 .filters__list {
     list-style: none;
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s .2s;
+}
+
+.filters__list:hover,
+.selected-filter:hover + .filters__list {
+    visibility: visible;
+    opacity: 1;
 }
 
 .list__item {
@@ -690,6 +686,10 @@ body {
     margin-left: 1rem;
 }
 
+.spacing-all {
+    margin-left: 4.2rem;
+}
+
 .create-order {
     margin: 0 auto;
     background-color: #fafafa;
@@ -707,7 +707,11 @@ body {
 }
 
 .odd {
-    background-color: #c69963;
+    background-color: #bbb;
+}
+
+.table-cell {
+    padding: 2rem;
 }
 
 .footer {
@@ -786,13 +790,12 @@ body {
 
 .profile-img {
     height: 100%;
-    transform: translateX(-4rem);
+    width: 100%;
     backface-visibility: hidden;
-    transition: all .5s;
+    object-fit: cover;
 }
 
 .user-pf {
-    background-color: orangered;
     margin: .4rem auto;
     width: 60%;
     padding: 2rem;
@@ -800,8 +803,49 @@ body {
 }
 
 .user-profile__outer {
+    background-color: #fafafe;
     margin: 0 auto;
     max-width: 480rem;
+    border-bottom: 2px solid #ccc;
+    padding: 4rem 2rem 2rem;
+}
+
+.user-profile__lower {
+    background-color: #fefefe;
+    padding: 6rem 8rem 2rem;
+}
+
+.user-zone {
+    display: flex;
+    justify-content: space-between;
+    height: 9rem;
+}
+
+.user-classification {
+    margin: 3rem 2rem;
+}
+
+.user-medal {
+    height: 2.25rem;
+    width: 2.25rem;
+}
+
+.user-pudding {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-number {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: -1.6rem;
+}
+
+.user-grammar {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .pic-house {
@@ -822,5 +866,42 @@ body {
 
 .order:hover .small-gallery__photo {
     opacity: .5;
+}
+
+.same-line {
+    display: flex;
+}
+
+.user-property {
+    margin-left: 25%;
+    margin-bottom: 1rem;
+    margin-right: 5rem;
+}
+
+.user-value {
+    text-align: right;
+}
+
+.admin-table {
+    margin: 4rem auto;
+}
+
+.admin-parcels__icon {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-left: 3rem
+}
+
+.admin-subheader {
+    padding: .6rem;
+}
+
+.selected-filter {
+    cursor: pointer;
+    font-size: 1.35rem;
+    font-weight: 300;
+    color: #292929;
+    text-transform: uppercase;
+    text-align: center;
 }
 

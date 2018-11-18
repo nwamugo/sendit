@@ -6,6 +6,7 @@
 
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 
         <title>SendIT | Admin services</title>
@@ -16,17 +17,7 @@
             <div class="header__logo-box">
                 <a href="parcels.html"><img src="resources/img/logog2.png" alt="Logo" class="header__logo"></a>
             </div>
-            <div class="search-container">
-                                <form action="user-profile.html" class="search">
-                                    <label for="search">Search</label>
-                                    <input type="text" class="search__input" placeholder="By Destination" name="search">
-                                    <button class="search__button">
-                                        <svg class="search__icon">
-                                            <use xlink:href="resources/img/sprite.svg#icon-magnifying-glass"></use>
-                                        </svg>
-                                    </button>
-                                </form>
-                            </div>
+
             <div class="user-dd">
                 <div class="user-dd-field">
                     <h3 class="user-dd-wrapname">Ugoji Duziem</h3>
@@ -43,6 +34,17 @@
                                         <use xlink:href="resources/img/sprite.svg#icon-user"></use>
                                     </svg>
                                     &nbsp; My Profile
+                                </h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="parcels.html" class="user-dd-link">
+                                <h4 class="user-dd-name">
+
+                                    <svg class="dd-icon">
+                                        <use xlink:href="resources/img/sprite.svg#icon-gift"></use>
+                                    </svg>
+                                    &nbsp; View Parcels
                                 </h4>
                             </a>
                         </li>
@@ -65,28 +67,42 @@
         <main class="user-pf">
             <div class="user-profile__outer">
                 <div class="user-profile__container">
+                    <figure class="profile-pic">
+                        <img src="resources/img/creator.jpg" alt="The author of this site" class="profile-img">
+                        <figcaption class="parcel-caption">Parcel XA896745</figcaption>
+                    </figure>
+                    <div class="user-zone">
+                        <div class="user-classification">
+                            <svg class="user-medal">
+                                <use xlink:href="resources/img/sprite.svg#icon-medal"></use>
+                            </svg>
+                            <h3 class="user-kind">Happy Customer</h3>
+                        </div>
+                        <div class="user-pudding">
+                            <div class="user-number">
+                                5
+                            </div>
+                            <div class="user-grammar">
+                                total orders made
+                            </div>
+                        </div>
+                    </div>
 
-                        <figure class="profile-pic">
-                            <img src="resources/img/parcel-cam.jpg" alt="A camera" class="profile-img">
-                            <figcaption class="parcel-caption">Parcel XA896745</figcaption>
-                        </figure>
-                        <div class="parcel-values">
-                            <div class="parcel-analysis">
-                                <h4 class="property-name">Pickup Location: &nbsp;</h4>
-                                <span class="property-value">SendIT office, #3 Wethedral Road, Owerri, Imo State</span>
+                </div>
+            </div>
+                <div class="user-profile__container">
+                        <div class="user-profile__lower">
+                            <div class="parcel-analysis same-line">
+                                <h4 class="property-name user-property">Name: &nbsp;</h4>
+                                <span class="property-value user-value">Ugoji Duziem</span>
                             </div>
-                            <div class="parcel-analysis">
-                                <h4 class="property-name">Destination: &nbsp;</h4>
-                                <span class="property-value">AAU University, Akungba, Ondo State</span>
-                            </div>
-                            <div class="parcel-analysis">
-                                <h4 class="property-name">Fee: &nbsp;</h4>
-                                <span class="property-value">N12,000</span>
+                            <div class="parcel-analysis same-line">
+                                <h4 class="property-name user-property">E-mail: &nbsp;</h4>
+                                <span class="property-value user-value">tickettoduzz@gmail.com</span>
                             </div>
                         </div>
 
                 </div>
-            </div>
         </main>
     </body>
 </html>

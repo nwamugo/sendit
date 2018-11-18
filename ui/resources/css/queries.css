@@ -1,0 +1,465 @@
+@media only screen and (max-width: 1440px) {
+  .parcel-action {
+    margin-left: -2rem;
+  }
+}
+
+
+@media only screen and (max-width: 1400px) {
+  .numbers {
+    font-size: 4rem;
+  }
+
+  .parcels-content {
+    width: 60%;
+  }
+
+  .my-parcels-status__delivered,
+  .my-parcels-status__queue,
+  .my-parcels-status__transit,
+  .my-parcels-status__cancelled {
+    font-size: 1rem;
+  }
+
+  .my-parcels__icon-gift,
+  .my-parcels__icon {
+    height: 1.5rem;
+    margin-left: -2rem;
+  }
+
+  .parcel-action {
+    width: 20rem;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  .order {
+    margin: 2.5rem .5rem 2.5rem .5rem;
+    max-width: 18rem;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .admin-table {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .delivery-orders {
+    padding: 1rem;
+  }
+
+  .order {
+    margin: 2.5rem 2rem 2.5rem 2.5rem;
+    max-width: 16rem;
+  }
+}
+
+@media only screen and (max-width: 1220px) {
+  .order {
+    margin: 2.5rem 1rem 2.5rem 2.5rem;
+    max-width: 16rem;
+  }
+
+  .my-parcels__icon {
+    padding-right: 0;
+  }
+
+  .my-parcels-status__delivered,
+  .my-parcels-status__queue,
+  .my-parcels-status__transit {
+    font-size: 1rem;
+    padding-left: 0;
+    margin-left: .1rem;
+  }
+}
+
+@media only screen and (max-width: 1210px) {
+  .parcel-visual {
+    transform: scale(.8);
+  }
+
+  .parcel-values {
+    margin-top: 2rem;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .form__container {
+    max-width: 25rem;
+    min-width: 22rem;
+  }
+
+  .same-line {
+    margin-left: -10rem;
+  }
+
+  .user-zone {
+    display: block;
+  }
+
+  .user-pudding {
+    margin-top: -3rem;
+    width:  12rem;
+  }
+
+  .user-medal {
+    margin-left: 4rem;
+  }
+
+  .user-number {
+    font-size: 2rem;
+    margin-left: -2rem;
+    margin-bottom: -.5rem;
+  }
+
+  .user-grammar {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 1170px) {
+  .order {
+    margin: 2.5rem .5rem 2.5rem 1.5rem;
+    max-width: 16rem;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .parcel-world {
+    display: block;
+  }
+
+  .parcel-action {
+    display: flex;
+    margin-left: 2rem;
+    flex: 0;
+    width: 90%;
+  }
+
+  .action-btns {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .order {
+    margin: 2.5rem .5rem 2.5rem 1.5rem;
+    max-width: 16rem;
+  }
+
+  .my-parcels__status {
+    width: 60%;
+  }
+
+  .parcels-section {
+    display: block;
+    padding: 4.5rem;
+}
+
+  .parcels-sidebar {
+    position: absolute;
+    top: 20.8rem;
+    left: 11%;
+    width: 55rem;
+    flex-direction: row;
+    border-radius: 0;
+    align-items: center;
+  }
+
+  .filters__list {
+    position: absolute;
+    left: 45rem;
+    z-index: 10;
+    background-color: #fff;
+
+
+    padding-left: 2rem;
+    width: 12.8rem;
+    box-shadow: 0 0.8rem 5rem 2rem rgba(101, 90, 86, 0.1);
+}
+
+  .filter-categories {
+    margin-bottom: 0;
+  }
+
+  .parcels-content {
+    width: 100%;
+    margin-top: 10rem;
+  }
+
+  .my-parcels {
+    width: 100%;
+  }
+
+
+  .delivery-orders {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 1080px) {
+  .my-parcels__title {
+    font-size: 1.2rem;
+  }
+
+  .order {
+    margin: 4.5rem 2.5rem 4.5rem 2.5rem;
+    max-width: 18rem;
+  }
+
+  .parcels-sidebar {
+    width: 75%;
+  }
+
+  .filters__list {
+    left: 39rem;
+    border-top-left-radius: 1.5rem;
+  }
+}
+
+
+@media only screen and (max-width: 1023px) {
+  .btn {
+    padding: 1.5rem 1.5rem;
+  }
+
+  .my-parcels-status__queue {
+    margin-right: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  .numbers {
+    font-size: 2.2rem;
+  }
+
+  .parcels-sidebar {
+    margin-left: 2.2rem;
+  }
+
+  .filters__list {
+    left: 37rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .display-status-btn {
+    transform: scale(.8);
+    margin-left: -2rem;
+  }
+}
+
+@media only screen and (max-width: 967px) {
+  .filters__list {
+    left: 35rem;
+  }
+
+  .order {
+    margin: 2.5rem .5rem 4.5rem 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 934px) {
+  .user-pudding {
+    flex-direction: row;
+    position: absolute;
+    top: 14rem;
+    right: 16rem;
+  }
+
+  .admin-table {
+    transform: scale(.9);
+  }
+}
+
+@media only screen and (max-width: 930px) {
+  .filters__list {
+    left: 33rem;
+  }
+
+  .my-parcels__status {
+    width: 70rem;
+    padding-right: 0;
+    margin-right: 0;
+  }
+
+  .user-property {
+    margin-right: 1rem;
+    flex-shrink: 0;
+  }
+}
+
+@media only screen and (max-width: 889px) {
+  .my-parcels__title {
+    margin-left: -1.7rem;
+  }
+
+  .grammar {
+    font-size: 1.2rem;
+  }
+
+  .filters__list {
+    left: 30rem;
+  }
+
+  .cancel-button {
+    margin-left: -4rem;
+  }
+
+  .admin-table {
+    margin-left: -2rem;
+  }
+}
+
+@media only screen and (max-width: 816px) {
+  tr > *:nth-of-type(2) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 816px) {
+  .parcels-content {
+    margin-left: -2.2rem;
+    max-width: 45rem;
+  }
+
+  .my-parcels__status {
+    display: none;
+  }
+
+  .parcels-sidebar {
+    margin-left: -1.7rem;
+  }
+
+   .filter-categories {
+    display: none;
+  }
+
+  .landing__intro,
+  .landing__tag-line {
+    margin-left: 2rem;
+  }
+
+  .user-classification {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .action-btns {
+    display: block;
+  }
+
+  .cancel-button {
+    margin-top: -4rem;
+    margin-left: .8rem;
+  }
+
+  .destination-btn {
+    margin-top: -5rem;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .user-pf {
+    position: absolute;
+    top: 9.5%;
+    right: 25%;
+  }
+
+  .user-pudding {
+    position: absolute;
+    top: 20.5%;
+    left: 20%;
+  }
+
+  tr > *:nth-of-type(4) {
+    display: none;
+  }
+
+  .user-dd-wrapname {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+    .parcels-sidebar {
+      margin-top: -5rem;
+    }
+
+    .user-dd-wrapname {
+      display: none;
+    }
+
+    .search {
+      display: none;
+    }
+
+    .profile-pic {
+      transform: scale(.9);
+      margin-left: -2rem;
+    }
+
+    .user-profile__outer {
+      min-width: 255.8px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+  .parcel-action {
+    display: block;
+  }
+
+  .destination-btn {
+    margin-top: -2rem;
+  }
+
+  .parcel-descript {
+    display: block;
+  }
+
+  tr > *:nth-of-type(3) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .filters__list {
+    left: 22rem;
+  }
+
+  .filter-categories {
+    display: none;
+  }
+
+  .new__order {
+    padding = 0;
+  }
+
+  .admin-table {
+    transform: scale(.7);
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .parcel-visual {
+    margin-left: -2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .parcels-sidebar {
+    margin-top: -6.5rem;
+  }
+
+  .parcel-visual {
+    margin-left: -3rem;
+    transform: scale(.7)
+  }
+}
+
