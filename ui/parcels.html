@@ -6,6 +6,7 @@
 
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 
         <title>SendIT &mdash; Your parcels</title>
@@ -100,7 +101,7 @@
                                 <svg class="my-parcels__icon">
                                     <use xlink:href="resources/img/sprite.svg#icon-blocked"></use>
                                 </svg>
-                                <h3 class="my-parcels-status__delivered">Cancelled: <span class="delivered-count">0</span></h3>
+                                <h3 class="my-parcels-status__cancelled">Cancelled: <span class="cancelled-count">0</span></h3>
                             </div>
                         </div>
                     </div>
@@ -186,8 +187,19 @@
                     </a>
                 </div>
                 <div class="filter-categories">
-                    <h3>Filters</h3>
-                    <ul class="filters__list">
+                    <h3>Filter: &nbsp;</h3>
+                    <div class="filter-dd">
+                        <h3 class="selected-filter">All &nbsp;
+                            <svg class="search__icon">
+                                <use xlink:href="resources/img/sprite.svg#icon-chevron-thin-down"></use>
+                            </svg>
+                        </h3>
+                        <ul class="filters__list">
+                            <li class="list__item">
+                                <a href="#" class="filter__item">
+                                    <span class="spacing-all">All</span>
+                                </a>
+                            </li>
                         <li class="list__item">
                             <a href="#" class="filter__item">
                                 <svg class="my-parcels__icon">
@@ -213,6 +225,7 @@
                             </a>
                         </li>
                     </ul>
+                    </div>
                 </div>
                 </nav>
             </div>
