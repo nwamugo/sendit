@@ -6,6 +6,7 @@
 
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 
         <title>SendIT &mdash; Your parcel details</title>
@@ -16,17 +17,7 @@
             <div class="header__logo-box">
                 <a href="parcels.html"><img src="resources/img/logog2.png" alt="Logo" class="header__logo"></a>
             </div>
-            <div class="search-container">
-                                <form action="#" class="search">
-                                    <label for="search">Search</label>
-                                    <input type="text" class="search__input" placeholder="By Destination" name="search">
-                                    <button class="search__button">
-                                        <svg class="search__icon">
-                                            <use xlink:href="resources/img/sprite.svg#icon-magnifying-glass"></use>
-                                        </svg>
-                                    </button>
-                                </form>
-                            </div>
+
             <div class="user-dd">
                 <div class="user-dd-field">
                     <h3 class="user-dd-wrapname">Ugoji Duziem</h3>
@@ -37,12 +28,23 @@
                 <div class="user-dd-content">
                     <ul class="user-dd-menu">
                         <li>
-                            <a href="#" class="user-dd-link">
+                            <a href="user-profile.html" class="user-dd-link">
                                 <h4 class="user-dd-name">
                                     <svg class="dd-icon">
                                         <use xlink:href="resources/img/sprite.svg#icon-user"></use>
                                     </svg>
                                     &nbsp; My Profile
+                                </h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="parcels.html" class="user-dd-link">
+                                <h4 class="user-dd-name">
+
+                                    <svg class="dd-icon">
+                                        <use xlink:href="resources/img/sprite.svg#icon-gift"></use>
+                                    </svg>
+                                    &nbsp; View Parcels
                                 </h4>
                             </a>
                         </li>
@@ -62,7 +64,7 @@
             </div>
         </header>
 
-        <main class="parcel-focus">
+        <main class="row">
             <div class="bg-video">
                 <video class="bg-video__content" autoplay muted loop>
                     <source src="resources/img/suburbia.mp4" type="video/mp4">
@@ -94,6 +96,7 @@
                     </div>
                 </div>
                 <div class="parcel-action">
+                    <div>
                     <h3 class="parcel-status">Status</h3>
                     <div class="display-status">
                         <svg class="my-parcels__icon">
@@ -101,20 +104,51 @@
                         </svg>
                         <h2 class="spacing">Queue</h2>
                     </div>
+                    </div>
+                    <div class="action-btns">
                     <div class="display-status-btn">
-                        <button class="order-edit change">
+                        <button class="order-edit change destination-btn">
                         <svg class="my-parcels__icon">
                             <use xlink:href="resources/img/sprite.svg#icon-pencil"></use>
                         </svg>Change Order Destination</button>
                     </div>
                     <div class="display-status-btn">
-                        <button class="order-edit spacing change">
+                        <button class="order-edit spacing change cancel-button">
                         <svg class="my-parcels__icon">
                             <use xlink:href="resources/img/sprite.svg#icon-cross"></use>
                         </svg>Cancel Order</button>
                     </div>
+                    </div>
                 </div>
             </div>
         </main>
+
+        <!-- <main class="create-order">
+            <table class="tabular">
+                <tr>
+                    <th>Property</th>
+                    <th>Value</th>
+                </tr>
+                <tr class="even">
+                    <td>Parcel ID</td>
+                    <td>XA896745</td>
+                </tr>
+                <tr class="odd">
+                    <td>Destination</td>
+                    <td>Akungba, Ondo State</td>
+                </tr>
+                <tr class="even">
+                    <td>Pickup Locaton</td>
+                    <td>Owerri</td>
+                </tr>
+                <tr class="odd">
+                    <td>Price</td>
+                    <td>N12,000</td>
+                </tr>
+            </table>
+
+        </main>
+ -->
+
     </body>
 </html>
