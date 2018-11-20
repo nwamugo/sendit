@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+
+        <title>SendIT &mdash; Admin</title>
+    </head>
+
+    <body class="container">
+        <div>
+        <header class="header">
+            <div class="header__logo-box">
+                <img src="resources/img/logog2.png" alt="Logo" class="header__logo">
+            </div>
+            <div class="search-container">
+                                <form action="#" class="search">
+                                    <label for="search" class="search__label">Search</label>
+                                    <input type="text" class="search__input" placeholder="Find any parcel" name="search">
+                                    <button class="search__button">
+                                        <svg class="search__icon">
+                                            <use xlink:href="resources/img/sprite.svg#icon-magnifying-glass"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+            <div class="user-dd">
+                <div class="user-dd-field">
+                    <h3 class="user-dd-wrapname">Clinton Fidelis (Admin)</h3>
+                    <svg class="dd-icon">
+                        <use xlink:href="resources/img/sprite.svg#icon-menu"></use>
+                    </svg>
+                </div>
+                <div class="user-dd-content">
+                    <ul class="user-dd-menu">
+                        <li>
+                            <a href="../index.html" class="user-dd-link">
+                                <h4 class="user-dd-name">
+
+                                    <svg class="dd-icon">
+                                        <use xlink:href="resources/img/sprite.svg#icon-log-out"></use>
+                                    </svg>
+                                    &nbsp; Log out
+                                </h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </header>
+        </div>
+            <div class="my-parcels">
+                        <div class="parcels-container admin-subheader">
+                            <div class="my-parcels__heading">
+                                <svg class="admin-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-gift"></use>
+                                </svg>
+                                <h3 class="admin-parcels__title">All Parcels</h3>
+                            </div>
+                            <div class="my-parcels__status">
+                                <svg class="admin-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-queue"></use>
+                                </svg>
+                                <h3 class="my-parcels-status__queue">Queue: <span class="queue-count">3</span></h3>
+                                <svg class="admin-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-truck"></use>
+                                </svg>
+                                <h3 class="my-parcels-status__transit">Transit: <span class="transit-count">1</span></h3>
+                                <svg class="admin-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-check"></use>
+                                </svg>
+                                <h3 class="my-parcels-status__delivered">Delivered: <span class="delivered-count">1</span></h3>
+                                <svg class="admin-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-blocked"></use>
+                                </svg>
+                                <h3 class="my-parcels-status__delivered">Cancelled: <span class="delivered-count">0</span></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+        <main>
+            <form action="#" class="customers-records">
+                <div class="admin-modify">
+                    <table id="ad-table" class="admin-table">
+                        <tr class="table-header">
+                            <th>Parcel ID</th>
+                            <th>Pickup Location</th>
+                            <th>User ID</th>
+                            <th>Fee</th>
+                            <th>Destination</th>
+                            <th>Status</th>
+                            <th>Present Location</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr class="table-row odd">
+                            <td class="table-cell"><a href="parcel-details.html">XA896745</a></td>
+                            <td class="table-cell nokeep"><a href="parcel-details.html">Owerri, Imo state</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">usr445</a></td>
+                            <td class="table-cell nokeep"><a href="parcel-details.html">12000</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">Enugu</a></td>
+                            <td class="table-cell">Transit</td>
+                            <td class="table-cell">Enugu</td>
+                            <td class="table-cell"><button class="admin-edit-btn">Edit</button>&nbsp;&nbsp;<button class="admin-edit-btn">Save</button></td>
+                        </tr>
+                        <tr class="table-row even">
+                            <td class="table-cell"><a href="parcel-details.html">XA896745</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">Owerri, Imo state</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">usr446</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">5000</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">Lagos</a></td>
+                            <td class="table-cell">Delivered</td>
+                            <td class="table-cell">Benin</td>
+                            <td class="table-cell"><button class="admin-edit-btn">Edit</button>&nbsp;&nbsp;<button class="admin-edit-btn">Save</button></td>
+                        </tr>
+                        <tr class="table-row odd">
+                            <td class="table-cell"><a href="parcel-details.html">XA896745</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">Owerri, Imo state</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">usr447</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">3000</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">Cross River</a></td>
+                            <td class="table-cell">Queue</td>
+                            <td class="table-cell">Ikot-Ekpene</td>
+                            <td class="table-cell"><button class="admin-edit-btn">Edit</button>&nbsp;&nbsp;<button class="admin-edit-btn">Save</button></td>
+                        </tr>
+                        <tr class="table-row even">
+                            <td class="table-cell"><a href="parcel-details.html">XA896745</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">Owerri, Imo state</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">usr448</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">40000</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">Abuja</a></td>
+                            <td class="table-cell">Queue</td>
+                            <td class="table-cell">Owo</td>
+                            <td class="table-cell"><button class="admin-edit-btn">Edit</button>&nbsp;&nbsp;<button class="admin-edit-btn">Save</button></td>
+                        </tr>
+                        <tr class="table-row odd">
+                            <td class="table-cell"><a href="parcel-details.html">XA896745</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">Owerri, Imo state</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">usr449</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">24000</a></td>
+                            <td class="table-cell"><a href="parcel-details.html">Sokoto</a></td>
+                            <td class="table-cell">Queue</td>
+                            <td class="table-cell__PL">Kaduna</td>
+                            <td class="table-cell"><button class="admin-edit-btn">Edit</button>&nbsp;&nbsp;<button class="admin-edit-btn">Save</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+        </main>
+
+        <script src="js/admin-modify.js" type="text/javascript"></script>
+    </body>
+</html>

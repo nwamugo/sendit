@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+
+        <title>SendIT &mdash; Your parcels</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header__logo-box">
+                <a href="parcels.html"><img src="resources/img/logog2.png" alt="Logo" class="header__logo"></a>
+            </div>
+            <div class="search-container">
+                                <form action="#" class="search">
+                                    <label for="search" class="search__label">Search</label>
+                                    <input type="text" class="search__input" placeholder="Find your parcel" name="search">
+                                    <button class="search__button">
+                                        <svg class="search__icon">
+                                            <use xlink:href="resources/img/sprite.svg#icon-magnifying-glass"></use>
+                                        </svg>
+                                    </button>
+                                </form>
+                            </div>
+            <div class="user-dd">
+                <div class="user-dd-field">
+                    <h3 class="user-dd-wrapname">Ugoji Duziem</h3>
+                    <svg class="dd-icon">
+                        <use xlink:href="resources/img/sprite.svg#icon-menu"></use>
+                    </svg>
+                </div>
+                <div class="user-dd-content">
+                    <ul class="user-dd-menu">
+                        <li>
+                            <a href="user-profile.html" class="user-dd-link">
+                                <h4 class="user-dd-name">
+                                    <svg class="dd-icon">
+                                        <use xlink:href="resources/img/sprite.svg#icon-user"></use>
+                                    </svg>
+                                    &nbsp; My Profile
+                                </h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html" class="user-dd-link">
+                                <h4 class="user-dd-name">
+
+                                    <svg class="dd-icon">
+                                        <use xlink:href="resources/img/sprite.svg#icon-log-out"></use>
+                                    </svg>
+                                    &nbsp; Log out
+                                </h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="parcels-overview">
+            <div class="gallery">
+                <figure class="gallery__item">
+                    <img src="resources/img/queue_1280.jpg" alt="Queued Packages" class="gallery__photo">
+                </figure>
+                <figure class="gallery__item">
+                    <img src="resources/img/intransit.jpg" alt="Moving Packages" class="gallery__photo">
+                </figure><figure class="gallery__item">
+                    <img src="resources/img/delivered_1280.jpg" alt="A delivered Parcel" class="gallery__photo">
+                </figure>
+            </div>
+
+            <div class="parcels-section">
+                <div class="parcels-content">
+                    <div class="my-parcels">
+                        <div class="parcels-container">
+                            <div class="my-parcels__heading">
+                                <svg class="my-parcels__icon-gift">
+                                    <use xlink:href="resources/img/sprite.svg#icon-gift"></use>
+                                </svg>
+                                <h1 class="my-parcels__title">My Parcels</h1>
+                            </div>
+                            <div class="my-parcels__status">
+                                <svg class="my-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-queue"></use>
+                                </svg>
+                                <h3 class="my-parcels-status__queue">Queue: <span class="queue-count">3</span></h3>
+                                <svg class="my-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-truck"></use>
+                                </svg>
+                                <h3 class="my-parcels-status__transit">Transit: <span class="transit-count">1</span></h3>
+                                <svg class="my-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-check"></use>
+                                </svg>
+                                <h3 class="my-parcels-status__delivered">Delivered: <span class="delivered-count">1</span></h3>
+                                <svg class="my-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-blocked"></use>
+                                </svg>
+                                <h3 class="my-parcels-status__cancelled">Cancelled: <span class="cancelled-count">0</span></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="delivery-orders">
+                        <div class="order">
+                            <figure class="pic-house">
+                                <img src="resources/img/parcel-cam.jpg" alt="A delivered Parcel" class="small-gallery__photo">
+                                <figcaption class="small-fig-caption"></figcaption>
+                            </figure>
+                            <h3>Parcel ID - &nbsp; XA896745</h3>
+                            <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
+                            <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
+                            <p class="fee">Fee: N12,000</p>
+
+                            <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
+                        </div>
+                        <div class="order">
+                            <figure class="pic-house">
+                                <img src="resources/img/bench.jpg" alt="A delivered Parcel" class="small-gallery__photo">
+                                <figcaption class="small-fig-caption"></figcaption>
+                            </figure>
+                            <h3>Parcel ID - &nbsp; XA896745</h3>
+                            <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
+                            <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
+                            <p class="fee">Fee: N12,000</p>
+                            <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
+                        </div>
+                        <div class="order">
+                            <figure class="pic-house">
+                                <img src="resources/img/lamp.jpg" alt="A delivered Parcel" class="small-gallery__photo">
+                                <figcaption class="small-fig-caption"></figcaption>
+                            </figure>
+                            <h3>Parcel ID - &nbsp; XA896745</h3>
+                            <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
+                            <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
+                            <p class="fee">Fee: N12,000</p>
+                            <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
+                        </div>
+                        <div class="order">
+                            <figure class="pic-house">
+                                <img src="resources/img/small-tv.jpg" alt="A delivered Parcel" class="small-gallery__photo">
+                                <figcaption class="small-fig-caption"></figcaption>
+                            </figure>
+                            <h3>Parcel ID - &nbsp; XA896745</h3>
+                            <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
+                            <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
+                            <p class="fee">Fee: N12,000</p>
+                            <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
+                        </div>
+                        <div class="order">
+                            <figure class="pic-house">
+                                <img src="resources/img/welch.jpg" alt="A delivered Parcel" class="small-gallery__photo">
+                                <figcaption class="small-fig-caption"></figcaption>
+                            </figure>
+                            <h3>Parcel ID - &nbsp; XA896745</h3>
+                            <p>Pickup Location:<br /><span class="value">SendIT office, #3 Wethedral Road, Owerri, Imo state</span></p>
+                            <p class="destination">Destination: AAU university, Akungba, Ondo State</p>
+                            <p class="fee">Fee: N12,000</p>
+                            <a href="parcel-details.html" class="btn-text">See details &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <nav class="parcels-sidebar">
+                <div class="delivery__total">
+                    <div class="numbers">
+                        5
+                    </div>
+                    <div class="grammar">
+                        total orders made
+                    </div>
+                </div>
+                <div class="delivery-press">
+                    <a href="new-order.html" class="btn btn-golden new__order">
+                        <h3 class="my-parcels-status__queue">
+                            <svg class="my-parcels__icon delivery-create__icon">
+                                <use xlink:href="resources/img/sprite.svg#icon-plus"></use>
+                            </svg>
+                            &nbsp; New delivery order
+                        </h3>
+                    </a>
+                </div>
+                <div class="filter-categories">
+                    <h3>Filter: &nbsp;</h3>
+                    <div class="filter-dd">
+                        <h3 class="selected-filter">All &nbsp;
+                            <svg class="search__icon">
+                                <use xlink:href="resources/img/sprite.svg#icon-chevron-thin-down"></use>
+                            </svg>
+                        </h3>
+                        <ul class="filters__list">
+                            <li class="list__item">
+                                <a href="#" class="filter__item">
+                                    <span class="spacing-all">All</span>
+                                </a>
+                            </li>
+                        <li class="list__item">
+                            <a href="#" class="filter__item">
+                                <svg class="my-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-queue"></use>
+                                </svg>
+                                <span class="spacing">Queue</span>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="filter__item">
+                                <svg class="my-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-truck"></use>
+                                </svg>
+                                <span class="spacing">Transit</span>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="filter__item">
+                                <svg class="my-parcels__icon">
+                                    <use xlink:href="resources/img/sprite.svg#icon-check"></use>
+                                </svg>
+                                <span class="spacing">Delivered</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </nav>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="legal">
+                &copy; 2018 by Duziem & Andela Nigeria. All rights reserved
+            </div>
+        </footer>
+    </body>
+</html>
