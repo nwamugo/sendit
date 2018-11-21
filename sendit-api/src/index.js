@@ -2,14 +2,15 @@ import http from 'http';
 import express from 'express';
 
 import config from './config';
-import routerJsObject from './using-js-object/controllers/parcel';
+import routerJsObject from './using-js-object/routes/parcels';
 import routerPostgres from './using-postgres/routes/parcels';
-import usersRoutes from './routes/users';
+import userRoutesJsObject from './using-js-object/routes/user';
+import userRoutesPostgres from './using-postgres/routes/user';
 
 
 const router = process.env.TYPE === 'db' ? routerPostgres : routerJsObject;
+const userRoutes = process.env.TYPE === 'db' ? userRoutesPostgres : userRoutesJsObject;
 
-console.log(process.env.TYPE);
 const app = express();
 app.server = http.createServer(app);
 
@@ -20,7 +21,8 @@ app.use(express.json());
 
 // api routes v1
 app.use('/api/v1', router);
-app.use('/api/v1/users', usersRoutes);
+app.use('/api/v1/auth', userRoutes);
+app.use('/api/v1/users', userRoutes);
 
 // Test Route
 app.get('/', (req, res) => {
