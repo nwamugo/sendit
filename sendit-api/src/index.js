@@ -2,10 +2,14 @@ import http from 'http';
 import express from 'express';
 
 import config from './config';
-import router from './routes/parcels';
+import routerJsObject from './using-js-object/controllers/parcel';
+import routerPostgres from './using-postgres/routes/parcels';
 import usersRoutes from './routes/users';
 
 
+const router = process.env.TYPE === 'db' ? routerPostgres : routerJsObject;
+
+console.log(process.env.TYPE);
 const app = express();
 app.server = http.createServer(app);
 
