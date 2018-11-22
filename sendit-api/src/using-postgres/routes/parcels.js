@@ -1,22 +1,23 @@
 import { Router } from 'express';
 import Parcels from '../controllers/parcels';
+import Auth from '../middleware/Auth';
 
 const router = Router();
 
 
 // api routes v1 (/api/v1)
-router.get('/parcels', Parcels.getAll);
+router.get('/parcels', Auth.verifyToken, Parcels.getAll);
 
-router.get('/parcels/:parcelId', Parcels.getOne);
+router.get('/parcels/:parcelId', Auth.verifyToken, Parcels.getOne);
 
-router.post('/parcels', Parcels.create);
+router.post('/parcels', Auth.verifyToken, Parcels.create);
 
-router.put('/parcels/:parcelId/cancel', Parcels.cancel);
+router.put('/parcels/:parcelId/cancel', Auth.verifyToken, Parcels.cancel);
 
-router.put('/parcels/:parcelId/destination', Parcels.changeDest);
+router.put('/parcels/:parcelId/destination', Auth.verifyToken, Parcels.changeDest);
 
-router.put('/parcels/:parcelId/status', Parcels.changeStatus);
+router.put('/parcels/:parcelId/status', Auth.verifyToken, Parcels.changeStatus);
 
-router.put('/parcels/:parcelId/presentLocation', Parcels.updatePL);
+router.put('/parcels/:parcelId/presentLocation', Auth.verifyToken, Parcels.updatePL);
 
 export default router;

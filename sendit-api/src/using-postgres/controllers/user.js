@@ -13,26 +13,29 @@ const User = {
     }
     const hashPassword = Helper.hashPassword(req.body.password);
 
+
     const createQuery = `INSERT INTO
-      users(id, email, password, created_date, modified_date)
-      VALUES($1, $2, $3, $4, $5)
+      users(id, email, password, is_admin, created_date, modified_date)
+      VALUES($1, $2, $3, $4, $5, $6)
       RETURNING *`;
     const values = [
       uuid.v4(),
       req.body.email,
       hashPassword,
+      false,
       moment(new Date()),
       moment(new Date())];
+
 
     try {
       const { rows } = await dbModel.query(createQuery, values);
       const token = Helper.generateToken(rows[0].id);
-      return res.status(200).send({ token });
+      return res.status(201).send({ token });
     } catch (error) {
       if (error.routine === '_bt_check_unique') {
         return res.status(400).send({ message: 'User with that EMAIL already exists' });
       }
-      return res.status(400).send(error);
+      return res.status(400).send(error.toString());
     }
   },
 

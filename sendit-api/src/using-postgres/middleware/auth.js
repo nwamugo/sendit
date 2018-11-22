@@ -1,5 +1,4 @@
 import jwt from 'jsonwebtoken';
-import dbModel from '../models';
 
 const Auth = {
   async verifyToken(req, res, next) {
@@ -9,11 +8,6 @@ const Auth = {
     }
     try {
       const decoded = await jwt.verify(token, process.env.SECRET);
-      const text = 'SELECT * FROM users WHERE id = $1';
-      const { rows } = await dbModel.query(text, [decoded.userId]);
-      if (!rows[0]) {
-        return res.status(400).send({ message: 'The token you provided is invalid' });
-      }
       req.user = { id: decoded.userId };
       next();
     } catch (error) {

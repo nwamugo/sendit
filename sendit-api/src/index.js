@@ -1,22 +1,19 @@
 import http from 'http';
 import express from 'express';
+import bodyParser from 'body-parser';
 
 import config from './config';
-import routerJsObject from './using-js-object/routes/parcels';
-import routerPostgres from './using-postgres/routes/parcels';
-import userRoutesJsObject from './using-js-object/routes/user';
-import userRoutesPostgres from './using-postgres/routes/user';
+import router from './using-postgres/routes/parcels';
+import userRoutes from './using-postgres/routes/user';
 
-
-const router = process.env.TYPE === 'db' ? routerPostgres : routerJsObject;
-const userRoutes = process.env.TYPE === 'db' ? userRoutesPostgres : userRoutesJsObject;
 
 const app = express();
 app.server = http.createServer(app);
 
 // middleware
 // parse application/json
-app.use(express.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 // api routes v1
@@ -36,6 +33,10 @@ app.get('/', (req, res) => {
       post: 'api/v1/parcels',
     },
   );
+});
+
+app.get('/*', (req, res) => {
+  res.send(404);
 });
 
 

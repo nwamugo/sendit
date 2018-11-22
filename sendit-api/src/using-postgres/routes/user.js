@@ -2,14 +2,14 @@ import { Router } from 'express';
 import User from '../controllers/user';
 
 const router = Router();
-
+console.log(User.signup);
 
 // api routes v1 (/api/v1)
-router.get('/users/:userId/parcels', User.getAll);
+router.get('/:userId/parcels', User.getAll);
 
-router.post('/auth/signup', User.signup);
+router.post('/signup', User.signup);
 
-router.post('/auth/login', User.login);
+router.post('/login', User.login);
 
 
 export default router;
