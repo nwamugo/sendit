@@ -2,6 +2,9 @@
   "name": "sendit-api",
   "version": "1.0.0",
   "description": "API endpoints for the sendIT app",
+  "engines": {
+    "node": "10.13.0"
+  }
   "main": "dist",
   "scripts": {
     "dev": "set NODE_ENV=development && nodemon --exec babel-node sendit-api/src --presets airbnb",
