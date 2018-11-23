@@ -9,7 +9,7 @@ SendIT is a courier service that helps users deliver parcels to different destin
 ## Getting Started
 
 The UI is hosted on Github pages [here](https://nwamugo.github.io/sendit/)
-The API is deployed on heroku here [here](https://arcane-ravine-70542.herokuapp.com/)
+The API is deployed on heroku [here](https://arcane-ravine-70542.herokuapp.com/)
 
 ### Prerequisites
 
@@ -81,7 +81,7 @@ This project was built with the linter eslint and an [airbnb style guide](https:
 
 ## Versioning
 
-We use [Github](http://github.com/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
+I use [Github](http://github.com/) for versioning.
 
 ## Authors
 

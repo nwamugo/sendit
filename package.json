@@ -10,10 +10,10 @@
     "lint": "./node_modules/.bin/eslint sendit-api/src",
     "db": "node sendit-api/src/db.js createUsersTable && node sendit-api/src/db.js createParcelsTable",
     "db-drop": "node sendit-api/src/db.js dropParcelsTable && node sendit-api/src/db.js dropUsersTable",
-    "test": "set NODE_ENV=test && mocha --compilers js:@babel/register --require @babel/polyfill --recursive sendit-api/src/test --exit",
-    "test-watch": "nodemon --exec \"npm test\"",
-    "cover": "set NODE_ENV=test && istanbul cover node_modules/mocha/bin/_mocha -- --ui bdd -R spec -t 5000 --compilers js:@babel/register --recursive \"sendit-api/src/test/*.test.js\"",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    // "test": "set NODE_ENV=test && mocha --compilers js:@babel/register --require @babel/polyfill --recursive sendit-api/src/test --exit",
+    // "test-watch": "nodemon --exec \"npm test\"",
+    // "cover": "set NODE_ENV=test && istanbul cover node_modules/mocha/bin/_mocha -- --ui bdd -R spec -t 5000 --compilers js:@babel/register --recursive \"sendit-api/src/test/*.test.js\"",
+    // "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
   },
   "author": "UGOJI Duziem",
   "license": "ISC",
